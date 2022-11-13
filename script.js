@@ -7,31 +7,31 @@ function getComputerChoice(){
 
 function game(playerChoice,computerChoice){
     if(playerChoice === computerChoice){
-        console.log("Draw")
+        return "Draw"
     }
     else if(playerChoice === "rock"){
         if(computerChoice === "scissors"){
-            console.log("You won!")
+            return "You won!"
         }
         else{
-            console.log("You lost!")
+            return "You lost!"
         }
     }
     else if(playerChoice === "paper"){
         if(computerChoice === "rock"){
-            console.log("You won!")
+            return "You won!"
         }
         else{
-            console.log("You lost!")
+            return "You lost!"
         }
         
     }
     else if(playerChoice === "scissors"){
         if(computerChoice === "paper"){
-            console.log("You won!")
+            return "You won!"
         }
         else{
-            console.log("You lost!")
+            return "You lost!"
         }
     }
 }
