@@ -5,33 +5,69 @@ function getComputerChoice(){
     return choices[value];
 }
 
-function game(playerChoice,computerChoice){
-    if(playerChoice === computerChoice){
+function playRound(playerChoice,computerChoice){
+    computerChoice = computerChoice.toLowerCase();
+    playerChoice = playerChoice.toLowerCase();
+    if(playerChoice == computerChoice){
         return "Draw"
     }
-    else if(playerChoice === "rock"){
-        if(computerChoice === "scissors"){
-            return "You won!"
+    else if(playerChoice == "scissors"){
+        if(computerChoice == "paper"){
+            return "Win"
         }
         else{
-            return "You lost!"
+            return "Lose"
         }
     }
-    else if(playerChoice === "paper"){
-        if(computerChoice === "rock"){
-            return "You won!"
+    else if(playerChoice == "rock"){
+        if(computerChoice == "scissors"){
+            return "Win"
         }
         else{
-            return "You lost!"
+            return "Lose"
         }
-        
     }
-    else if(playerChoice === "scissors"){
-        if(computerChoice === "paper"){
-            return "You won!"
+    else if(playerChoice == "paper"){
+        if(computerChoice == "stone"){
+            return "Win"
         }
         else{
-            return "You lost!"
+            return "Lose"
         }
+    }
+    else{
+        return "That is not a valid option."
     }
 }
+
+function match(){
+    let playerCount = 0;
+    let computerCount = 0;
+    for(let i = 0; i < 5; i++){
+        let playerChoice = prompt("Choose rock, paper or scissors");
+        let computerChoice = getComputerChoice();
+        console.log(computerChoice);
+        let match_result = playRound(playerChoice, computerChoice);
+        if(match_result == "Win"){
+            playerCount += 1;
+        }
+        else if(match_result == "Lose"){
+            computerCount += 1;
+        }
+        else{
+            console.log("Draw")
+        }
+    }
+
+    if(playerCount == computerCount){
+        return "You played a draw"
+    }
+    else if (playerCount > computerCount){
+        return "You won the match!"
+    }
+    else{
+        return "You lost the match!"
+    }
+}
+
+console.log(match());
