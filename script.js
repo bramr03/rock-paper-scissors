@@ -40,6 +40,16 @@ function playRound(playerChoice,computerChoice){
     }
 }
 
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      let computerChoice = getComputerChoice();
+      let match_result = playRound(button.id, computerChoice);
+    });
+  });
+
+
 /* function match(){
     let playerCount = 0;
     let computerCount = 0;
