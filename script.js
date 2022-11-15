@@ -40,7 +40,7 @@ function playRound(playerChoice,computerChoice){
     }
 }
 
-function match(){
+/* function match(){
     let playerCount = 0;
     let computerCount = 0;
     for(let i = 0; i < 5; i++){
@@ -70,4 +70,4 @@ function match(){
     }
 }
 
-console.log(match());
+console.log(match()); */

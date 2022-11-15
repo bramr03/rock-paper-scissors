@@ -1,0 +1,80 @@
+:root {
+    --color1: #9381FF;
+    --color2: #B8B8FF;
+    --color3: #F8F7FF;
+  }
+
+  .page{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.header{
+    background-color: #9381FF;
+    height: 100px;
+    text-align: center;
+}
+
+.middle{
+    background-color: var(--color3, gray);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+#buttons{
+    background-color: var(--color3, gray);
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#choose{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-top: 75px;
+    
+}
+
+#score{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+.footer{
+    background-color: #9381FF;
+    height: 70px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F8F7FF;
+    font-weight: bold;
+  }
+
+button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #B8B8FF;
+    height: 100px;
+    width: 200px;
+    border: 0px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 5px darkslategrey;
+}
