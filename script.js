@@ -2,6 +2,7 @@ const choices = ["rock", "paper", "scissors"]
 
 function getComputerChoice(){
     let value = Math.floor(Math.random() * 3)
+    document.getElementById("computer").innerHTML = "Computer choice: " + choices[value];
     return choices[value];
 }
 
@@ -43,9 +44,19 @@ function playRound(playerChoice,computerChoice){
 const buttons = document.querySelectorAll('button');
 
 buttons.forEach((button) => {
+    let playerScore = 0;
+    let computerScore = 0;
     button.addEventListener('click', () => {
       let computerChoice = getComputerChoice();
       let match_result = playRound(button.id, computerChoice);
+      if(match_result == "Win"){
+        playerScore = playerScore + 1;
+        document.getElementById("playerScore").innerHTML = playerScore.toString();
+      }
+      else if(match_result == "Lose"){
+        computerScore = computerScore + 1;
+        document.getElementById("computerScore").innerHTML = computerScore.toString();
+      }
     });
   });
 

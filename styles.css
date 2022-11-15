@@ -45,12 +45,23 @@
     
 }
 
-#score{
+#scores{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 25px;
 }
+
+#computer{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
 
 
 .footer{
