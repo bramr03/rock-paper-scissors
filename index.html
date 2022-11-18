@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto+Mono&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
     <link href="styles.css" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Rock, paper, scissors</title>
 </head>
-<body style="margin: 0;">
+<body style="color: #001f3f; margin: 0; font-family: 'Roboto Mono', monospace;">
     <div class="page">
         <div class="header">
             <h1>Rock, paper or scissors!</h1>
@@ -16,16 +17,22 @@
                 <h2>Choose:</h2>
             </div>
             <div id="buttons">
-                <button id="rock">Rock</button>
-                <button id="paper">Paper</button>
-                <button id="scissors">Scissors</button>
+                <button class= "choice" id="rock">Rock</button>
+                <button class= "choice"id="paper">Paper</button>
+                <button class= "choice"id="scissors">Scissors</button>
             </div>
             <div id="scores">
-                <h4 id="playerScore">0</h4>
-                <h4 id="computerScore">0</h4>
+                <h4 id="playerScore">Your score: 0</h4>
+                <h4 id="computerScore">The computer's Score: 0</h4>
+            </div>
+            <div id="player">
+                <h4></h4>
             </div>
             <div id="computer">
-                <h4>Computer choice: </h4>
+                <h4></h4>
+            </div>
+            <div id="wld">
+                <h4></h4>
             </div>
         </div>
         <div class="footer">

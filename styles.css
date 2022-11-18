@@ -1,8 +1,4 @@
-:root {
-    --color1: #9381FF;
-    --color2: #B8B8FF;
-    --color3: #F8F7FF;
-  }
+
 
   .page{
     height: 100%;
@@ -14,23 +10,24 @@
 }
 
 .header{
-    background-color: #9381FF;
+    background-color: #caebf2;
     height: 100px;
     text-align: center;
 }
 
 .middle{
-    background-color: var(--color3, gray);
+    background-color: #caebf2;
     height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: stretch;
     align-content: stretch;
+    padding: 5px;
 }
 
 #buttons{
-    background-color: var(--color3, gray);
+    background-color: #caebf2;
     height: 500px;
     display: flex;
     align-items: center;
@@ -39,7 +36,6 @@
 
 #choose{
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin-top: 75px;
     
@@ -50,36 +46,29 @@
     align-items: center;
     justify-content: space-evenly;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 25px;
 }
 
-#computer{
+#computer, #player, #wld{
+    padding: 10px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 25px;
 }
-
-
 
 .footer{
-    background-color: #9381FF;
+    background-color: #caebf2;
     height: 70px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #F8F7FF;
     font-weight: bold;
   }
 
 button {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     font-weight: bold;
     background-color: #B8B8FF;
