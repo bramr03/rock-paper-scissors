@@ -10,13 +10,11 @@
 }
 
 .header{
-    background-color: #caebf2;
     height: 100px;
     text-align: center;
 }
 
 .middle{
-    background-color: #caebf2;
     height: 500px;
     display: flex;
     flex-direction: column;
@@ -27,7 +25,6 @@
 }
 
 #buttons{
-    background-color: #caebf2;
     height: 500px;
     display: flex;
     align-items: center;
